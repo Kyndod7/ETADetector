@@ -28,7 +28,7 @@
         android:id="@+id/SsidTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ssid" />
+        android:text="@string/pref_ssid" />
 
     <EditText
         android:id="@+id/SsidEditText"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/SsidEditText"
         android:layout_below="@+id/SsidEditText"
-        android:text="@string/mac_addr_1" />
+        android:text="@string/pref_ap1_mac_addr" />
 
     <EditText
         android:id="@+id/mac1EditText"
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/mac1EditText"
         android:layout_below="@+id/mac1EditText"
-        android:text="@string/mac_addr_2" />
+        android:text="@string/pref_ap2_mac_addr" />
 
     <EditText
         android:id="@+id/mac2EditText"

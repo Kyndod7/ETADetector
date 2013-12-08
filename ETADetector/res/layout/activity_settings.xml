@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_ap_config" >
+
+        <EditTextPreference
+            android:key="pref_ssid"
+            android:title="@string/pref_ssid" />
+
+        <PreferenceScreen
+            android:key="pref_ap1_config"
+            android:persistent="true"
+            android:title="@string/pref_ap1_config" >
+
+            <EditTextPreference
+                android:key="pref_ap1_mac_addr"
+                android:title="@string/pref_ap1_mac_addr" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="pref_ap1_wpa2"
+                android:title="@string/pref_use_wpa2" />
+
+            <EditTextPreference
+                android:key="pref_ap1_password"
+                android:title="@string/pref_ap1_password" />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="pref_ap2_config"
+            android:persistent="true"
+            android:title="@string/pref_ap2_config" >
+
+            <EditTextPreference
+                android:key="pref_ap2_mac_addr"
+                android:title="@string/pref_ap2_mac_addr" />
+
+            <CheckBoxPreference
+                android:defaultValue="pref_ap2_wpa2"
+                android:key="prefSendReport"
+                android:title="@string/pref_use_wpa2" />
+
+            <EditTextPreference
+                android:key="pref_ap2_password"
+                android:title="@string/pref_ap2_password" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_server_config" >
+
+        <EditTextPreference
+            android:key="pref_server_ip"
+            android:title="@string/pref_server_ip" />
+
+        <EditTextPreference
+            android:inputType="number"
+            android:key="pref_server_port"
+            android:title="@string/pref_server_port" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_use_ssl"
+            android:title="@string/pref_use_ssl" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
