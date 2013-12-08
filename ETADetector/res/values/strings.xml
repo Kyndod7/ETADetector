@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ETA Detector</string>
+    <string name="action_settings">Settings</string>
+    <string name="server_ip_key">server_ip</string>
+    <string name="ssid_key">ssid</string>
+    <string name="mac_addr_1_key">mac_addr_1</string>
+    <string name="mac_addr_2_key">mac_addr_2</string>
+    <string name="default_server_ip"></string>
+    <string name="default_ssid"></string>
+    <string name="default_mac"></string>
+    <string name="server_ip">Server IP</string>
+    <string name="ssid">SSID</string>
+    <string name="mac_addr_1">MAC Address 1</string>
+    <string name="mac_addr_2">MAC Address 2</string>
+    <string name="test_button">Test</string>
+
+</resources>

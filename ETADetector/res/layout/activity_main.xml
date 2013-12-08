@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- 
+    <TextView
+        android:id="@+id/serverIpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_ip" />
+
+    <EditText
+        android:id="@+id/serverIpEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serverIpTextView"
+        android:layout_below="@+id/serverIpTextView"
+        android:ems="10" />
+ 	-->
+    <TextView
+        android:id="@+id/SsidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ssid" />
+
+    <EditText
+        android:id="@+id/SsidEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SsidTextView"
+        android:layout_below="@+id/SsidTextView"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/mac1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SsidEditText"
+        android:layout_below="@+id/SsidEditText"
+        android:text="@string/mac_addr_1" />
+
+    <EditText
+        android:id="@+id/mac1EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mac1TextView"
+        android:layout_below="@+id/mac1TextView"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/mac2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mac1EditText"
+        android:layout_below="@+id/mac1EditText"
+        android:text="@string/mac_addr_2" />
+
+    <EditText
+        android:id="@+id/mac2EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mac2TextView"
+        android:layout_below="@+id/mac2TextView"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/testButton"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mac2EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/test_button" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/testButton"
+        android:layout_marginTop="10dp"
+        android:background="#333333" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/outputTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
